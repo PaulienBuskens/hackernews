@@ -20,7 +20,6 @@
                 <tbody>
                     @if(count($articles) > 0)
                         @foreach($articles->all() as $article)
-  
                             <tr class="table-active">
                                 <th>{{ $article->id}}</th>
                                 <td>{{ $article->title}}</td>

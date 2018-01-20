@@ -28,3 +28,20 @@ Route::get('/read/{id}', 'CreatesController@read');
 Route::get('/delete/{id}', 'CreatesController@delete');
 
 Route::get('/change','CreatesController@change');
+
+Route::get('/login', function(){
+    return view('login');
+});
+
+Route::get('/register', function(){
+    return view('register.register');
+});
+
+Route::post('/register_action','RegistersController@register');
+
+Route::post('/login_check','RegistersController@login');
+
+Route::get('/logout', function(){
+    Auth::logout();
+    return Redirect::to('/');
+})->middleware("auth");     //als user niet ingelogt is kan die deze url niet zien
