@@ -8,15 +8,10 @@ use App\Comment;
 
 class CommentsController extends Controller
 {
-
     public function store(Article $article){
 
-        Comment::create([
-            'body'=>request('body'),
-            'article_id' => $article->id
-
-        ]);
-        
+        $this->validate(request(), ['body' => 'required|min:2']);
+        $article->addComment(request('body'));
         return back();
     }
 }
