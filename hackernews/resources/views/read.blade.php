@@ -6,7 +6,7 @@
             <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
                 <div class="card-header">{{$articles->title}}</div>
                     <div class="card-body">
-                        <p class="card-text"><a href="{{$articles->description}}">{{$articles->description}}</a></p>
+                        <p class="card-text"><a href="{{$articles->description}}" target="_blank">{{$articles->description}}</a></p>
                         <hr>
                         <div class="comments">
                             <ul class="list-group">
@@ -21,11 +21,12 @@
                             @endforeach
                             </ul>
                         </div>
-
+                        @if(Auth::user())
                         <hr>
-
+                        
                         <div class="card">
                             <div class="card-block">
+                           
                                 <form method='POST' action="/articles/{{$articles->id}}/comments">
                                 {{csrf_field()}}
                                 
@@ -36,9 +37,10 @@
                                        <button type="submit" class="btn btn-primary">Add Comment</button>
                                     </div>    
                                 </form>
+                               
                             </div>
                         </div>
-
+                        @endif
                     </div>
                 </div>
             </div>
