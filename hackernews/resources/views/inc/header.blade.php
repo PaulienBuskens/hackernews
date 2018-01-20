@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>laravel crud app</title>
+    <title>Hackernews</title>
     <link rel="stylesheet" type="text/css" href="{{  url('css/slateTheme.css') }}">
     <link rel="stylesheet" type="text/css" href="{{  url('css/style.css') }}">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="#">laravel CRUD app</a>
+  <a class="navbar-brand" href="/">Hackernews</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,6 +19,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="create">Create</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="change">change</a>
       </li>
     </ul>
   </div>

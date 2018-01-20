@@ -12,6 +12,11 @@ class CreatesController extends Controller
         return view('home', ['articles' => $articles]);
     }
 
+    public function change(){
+        $articles = Article::all();
+        return view('change',['articles' => $articles]);
+    }
+
     public function add(Request $request){
         $this->validate($request, [
             'title' => 'required',

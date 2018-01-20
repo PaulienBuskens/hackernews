@@ -26,3 +26,5 @@ Route::post('/edit/{id}', 'CreatesController@edit');
 Route::get('/read/{id}', 'CreatesController@read');
 
 Route::get('/delete/{id}', 'CreatesController@delete');
+
+Route::get('/change','CreatesController@change');
