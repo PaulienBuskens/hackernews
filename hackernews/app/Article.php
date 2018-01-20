@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
-    //
+
+    protected $fillable = ['title', 'description'];
+
+    public function Comments(){
+
+        return $this->hasMany(Comment::class);
+    }
 }

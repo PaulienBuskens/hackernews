@@ -24,6 +24,9 @@
                                 <th>{{ $article->id}}</th>
                                 <td>{{ $article->title}}</td>
                                 <td>{{ $article->description}}</td>
+                                <td>
+                                <a href='{{url("/read/{$article->id}")}}' class="btn btn-primary">Read</a>    
+                                </td>
                             </tr> 
                         @endforeach
                     @endif

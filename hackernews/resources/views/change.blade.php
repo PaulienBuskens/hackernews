@@ -29,7 +29,8 @@
                                 <td>
                                     <a href='{{url("/read/{$article->id}")}}' class="btn btn-primary">Read</a> |
                                     <a href='{{url("/update/{$article->id}")}}' class="btn btn-secondary">Update</a> |
-                                    <a href='{{url("/delete/{$article->id}")}}' class="btn btn-danger">Delete</a>
+                                   <!-- <a href='{{url("/delete/{$article->id}")}}' class="btn btn-danger">Delete</a> -->
+                                   <a href="/commend" class="btn btn-primary">commend</a>
                                 </td>
                             </tr> 
                         @endforeach

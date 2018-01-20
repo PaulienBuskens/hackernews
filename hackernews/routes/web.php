@@ -45,3 +45,6 @@ Route::get('/logout', function(){
     Auth::logout();
     return Redirect::to('/');
 })->middleware("auth");     //als user niet ingelogt is kan die deze url niet zien
+
+
+Route::post('/articles/{article}/comments', 'CommentsController@store');
