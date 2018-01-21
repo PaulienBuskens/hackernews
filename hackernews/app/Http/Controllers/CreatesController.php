@@ -58,4 +58,8 @@ class CreatesController extends Controller
         Article::where('id',$id)->delete();
         return redirect('/')->with('info','Article Deleted Successfully');
     }
+
+    public function pagenotfound(){
+        return view('error.404error');
+    }
 }

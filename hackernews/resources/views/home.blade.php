@@ -1,5 +1,12 @@
 @include('inc.header')
 
+    @if(Auth::user())
+    <div class="text-center">
+    <hr>
+    <h2>Welcome to Hackernews</h2>
+    </div>
+    @endif
+
     <div class="container">
         <div class="row">
         <legend>Inhouds tafel</legend>

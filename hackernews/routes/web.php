@@ -48,3 +48,5 @@ Route::get('/logout', function(){
 
 
 Route::post('/articles/{article}/comments', 'CommentsController@store');
+
+Route::get('pagenotfound', ['as' => 'notfound','uses'=> 'CreatesController@pagenotfound']);
