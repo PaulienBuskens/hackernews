@@ -23,9 +23,9 @@
                             <label for="exampleTextarea">Description</label>
                             <textarea type="text" name="description" class="form-control" id="exampleTextarea" rows="3" placeholder="Enter description"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
                         
-                        <a href="{{ url('/')}}" class="btn btn-primary">Back</a>
+                        <a href="{{ url('/')}}" class="btn btn-outline-primary">Back</a>
 
                     </fieldset>
                 </form>

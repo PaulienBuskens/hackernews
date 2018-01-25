@@ -2,6 +2,7 @@ body {
     padding: 50px;
     font-family: Arial, sans-serif;
     font-size: 100%;
+    background-image: url("/img/sandBackground.png");
 }
 
 .opdracht {

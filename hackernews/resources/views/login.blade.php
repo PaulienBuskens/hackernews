@@ -21,7 +21,7 @@
                         @if($errors->has('password'))<p>{{$errors->first('password')}}</p>@endif
                     </div>
     
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-outline-primary">Submit</button>
                 </fieldset>
             </form>
         </div>

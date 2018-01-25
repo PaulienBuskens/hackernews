@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\facades\Auth;
 
 class Article extends Model
 {
@@ -19,4 +20,5 @@ class Article extends Model
         $this->comments()->create(compact('body'));
 
     }
+
 }

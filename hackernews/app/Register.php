@@ -29,5 +29,6 @@ class Register extends Authenticatable
 
         $users->save();
     }
+
 }
 

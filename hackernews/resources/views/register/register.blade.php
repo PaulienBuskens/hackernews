@@ -44,7 +44,7 @@
                             @if($errors->has('cpassword'))<p>{{$errors->first('cpassword')}}</p>@endif
                         </div>
     
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-outline-primary">Submit</button>
                     </fieldset>
                 </form>
             </div>

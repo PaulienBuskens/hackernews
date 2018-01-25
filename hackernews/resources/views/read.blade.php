@@ -34,7 +34,7 @@
                                         <textarea name="body" placeholder="your comments here" class="form-control"></textarea>
                                     </div>
                                     <div class="form-group">
-                                       <button type="submit" class="btn btn-primary">Add Comment</button>
+                                       <button type="submit" class="btn btn-outline-primary">Add Comment</button>
                                     </div>    
                                 </form>
                                

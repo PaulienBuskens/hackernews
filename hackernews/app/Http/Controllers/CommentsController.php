@@ -8,7 +8,6 @@ use App\Comment;
 
 class CommentsController extends Controller
 {
-    use likableTrait;
 
     public function store(Article $article){
 

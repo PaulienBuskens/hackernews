@@ -1,0 +1,4 @@
+RewriteEngine On
+Rewriterule ^(.*)$ public/$1 [L]
+
+

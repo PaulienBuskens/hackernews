@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <title>Hackernews</title>
-    <link rel="stylesheet" type="text/css" href="{{  url('css/slateTheme.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{  url('css/solarBootswatch.css') }}">
     <link rel="stylesheet" type="text/css" href="{{  url('css/style.css') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">Hackernews</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
     <span class="navbar-toggler-icon"></span>

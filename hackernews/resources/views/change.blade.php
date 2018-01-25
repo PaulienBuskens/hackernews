@@ -27,10 +27,10 @@
                                 <td>{{ $article->title}}</td>
                                 <td>{{ $article->description}}</td>
                                 <td>
-                                    <a href='{{url("/read/{$article->id}")}}' class="btn btn-primary">Read</a> |
-                                    <a href='{{url("/update/{$article->id}")}}' class="btn btn-secondary">Update</a> |
+                                    <a href='{{url("/read/{$article->id}")}}' class="btn btn-outline-primary">Read</a> |
+                                    <a href='{{url("/update/{$article->id}")}}' class="btn btn-outline-secondary">Update</a> |
                                    <!-- <a href='{{url("/delete/{$article->id}")}}' class="btn btn-danger">Delete</a> -->
-                                   <a href="/commend" class="btn btn-primary">commend</a>
+                                   <a href="/commend" class="btn btn-outline-success">comment</a>
                                   
                                 </td>
                             </tr> 

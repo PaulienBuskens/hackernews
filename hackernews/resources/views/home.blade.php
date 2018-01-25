@@ -1,3 +1,4 @@
+
 @include('inc.header')
 
     @if(Auth::user())
@@ -32,7 +33,8 @@
                                 <td>{{ $article->title}}</td>
                                 <td>{{ $article->description}}</td>
                                 <td>
-                                <a href='{{url("/read/{$article->id}")}}' class="btn btn-primary">Read</a>    
+                                <a href='{{url("/read/{$article->id}")}}' class="btn btn-outline-primary">Read</a>|   
+                                                               
                                 </td>
                             </tr> 
                         @endforeach
